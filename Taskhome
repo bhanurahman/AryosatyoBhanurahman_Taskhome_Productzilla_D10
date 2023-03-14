@@ -1,0 +1,59 @@
+//for loop
+console.log('for loop');
+for (let i = 0; i <= 10; i++) {
+console.log('angka',i);
+}
+let angka = 6;
+for (let i = 0; i < 2; i++) {
+    angka = angka * 6;   
+}
+console.log(angka);
+
+//for while loop
+console.log('=========');
+console.log('for loop');
+let i = 0;
+while (i <= 5) {
+    console.log('angka',i);
+    i++;
+}
+
+let a = 0;
+while (a <= 5) {
+    if(a <= 5){
+        ulangi = true
+    }
+    console.log('test', a);
+    a++
+}
+// for do while loop
+console.log('===========');
+console.log('for do-while loop');
+let b = 1
+do {
+    console.log('test lagi', b);
+    b++;
+} while(b <= 8)
+
+let c = 3
+do{
+    console.log('nama',c);
+    c++;
+} while(c <= 10)
+
+//loop dari array
+console.log('========');
+console.log('loop dari array');
+console.log('klasemen liga inggris');
+const ligaInggris = {
+    peringkat1 : '1. emyu',
+    peringkat2 : '2. arsenal',
+    peringkat3 : '3. city',
+    peringkat4 : '4. ipul',
+    peringkat5 : '5. bango',
+};
+const ligaInggrisKeys = Object.keys(ligaInggris);
+for (let i = 0; i < ligaInggrisKeys.length; i++) {
+    const key = ligaInggrisKeys[i];
+    console.log(ligaInggris[key]);
+}
